@@ -100,7 +100,7 @@ result = {}
     result = result.merge(stock_parse(doc))
 
   else
-    puts l_area
+    #puts l_area
     puts response.code
 
   end
@@ -111,4 +111,4 @@ end
 #response = stock_search("136200","20151010","2","1","2","10000","16000","2","100")
 
 #puts result["00061701"]
-#puts result.sort_by{|key,val| val['sum']}
+puts result.sort_by{|key,val| val['sum']}
